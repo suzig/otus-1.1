@@ -17,17 +17,17 @@ spec:
           image: ribragimovalfa/otus-hw1.1:latest
           ports:
             - name: web
-              containerPort: 80
+              containerPort: 5000
           livenessProbe:
             httpGet:
-              port: 80
+              port: 5000
               path: /health
             initialDelaySeconds: 5
             periodSeconds: 2
             timeoutSeconds: 1
           readinessProbe:
             httpGet:
-              port: 80
+              port: 5000
               path: /health
             initialDelaySeconds: 2
             periodSeconds: 2
