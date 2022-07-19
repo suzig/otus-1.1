@@ -16,12 +16,12 @@ spec:
               service:
                 name: otus-hw1-service
                 port:
-                  number: 5000
+                  number: 8000
           - path: /(.*)
             pathType: Prefix
             backend:
               service:
                 name: otus-hw1-service
                 port:
-                  number: 5000
+                  number: 8000
 
